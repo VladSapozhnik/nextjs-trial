@@ -16,7 +16,16 @@
   }
 }
 
+#__next {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 body {
+  //font-family: 'Dongle', sans-serif !important;
+  display: flex;
+  flex-direction: column;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +33,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.active {
+  color: red;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.list {
+  & li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+    & img {
+      margin-right: 35px;
+    }
+  }
 }

@@ -1,0 +1,18 @@
+.nav  {
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid dodgerblue;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  &_item {
+    padding: 10px;
+  }
+}
